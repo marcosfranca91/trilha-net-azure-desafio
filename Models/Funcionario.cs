@@ -24,5 +24,16 @@ namespace TrilhaNetAzureDesafio.Models
         public string Departamento { get; set; }
         public decimal Salario { get; set; }
         public DateTimeOffset? DataAdmissao { get; set; }
+
+
+        public void AtualizarDados(string nome, string endereco, string ramal, string emailProfissional, string departamento, decimal salario)
+        {
+            Nome = nome;
+            Endereco = endereco;
+            Ramal = ramal;
+            EmailProfissional = emailProfissional;
+            Departamento = departamento;
+            Salario = salario;
+        }
     }
 }
